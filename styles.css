@@ -1,0 +1,86 @@
+/* .dropdown{
+  position: relative;
+}
+.dropdown-menu{
+  display: flex;
+  flex-direction: column;
+} */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: table;
+}
+.content{
+  padding-bottom: 6rem;
+}
+.typewriter h1{
+  text-align: center;
+  z-index:1;
+  font-weight: 600;
+  font-size: 90px;
+  color: #fff;
+  font-family:sans-serif;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid yellow; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+.bottom-container{
+  display: table-row;
+  height: 0;
+   margin-top: 100px;
+   padding: 20px 0 10px;
+   background-color: #212529;
+   text-align: center;
+}
+.copyright{
+  color: #fff;
+  margin-top: 10px;
+}
+body
+{
+  margin:0;
+  padding:0;
+  height: 100%;
+}
+a:hover{
+  color: #fff;
+}
+a{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: yellow }
+}
+.nav-item{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.navbar{
+  margin-bottom: 100px;
+}
